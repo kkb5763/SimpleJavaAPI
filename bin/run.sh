@@ -14,6 +14,6 @@ fi
 # export PORT=8081
 # export DAMO_CLASS=com.penta.scpdb.ScpDbAgent
 # export DAMO_CONF_PATH=/data/app/airflow/damo/scp.ini
-# export DAMO_GROUP=KEY_GROUP_NAME
+# export DAMO_GROUP=KEY1
 
 exec java -cp "$CP" DamoHttpApi

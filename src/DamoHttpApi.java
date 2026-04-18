@@ -139,7 +139,7 @@ public class DamoHttpApi {
   static final class DamoEnc {
     private static final String CLS = getenv("DAMO_CLASS", "");
     private static final String CONF = getenv("DAMO_CONF_PATH", "/data/app/airflow/damo/scp.ini");
-    private static final String GROUP = getenv("DAMO_GROUP", "");
+    private static final String GROUP = getenv("DAMO_GROUP", "KEY1");
     private static final String METHOD_ENC = getenv("DAMO_ENCRYPT_METHOD", "scpEncrypt");
     private static final String METHOD_DEC = getenv("DAMO_DECRYPT_METHOD", "scpDecrypt");
     private static final String KEY = getenv("DAMO_KEY", "");

@@ -23,12 +23,12 @@ import java.nio.charset.StandardCharsets;
  */
 public class DamoHttpApiDirect {
   private static final String CONF_PATH = getenv("DAMO_CONF_PATH", "/data/app/airflow/damo/scp.ini");
-  private static final String GROUP = getenv("DAMO_GROUP", "");
+  private static final String GROUP = getenv("DAMO_GROUP", "KEY1");
   private static final ScpDbAgent AGENT = new ScpDbAgent();
 
   public static void main(String[] args) throws Exception {
     if (GROUP.isBlank()) {
-      throw new IllegalStateException("Set DAMO_GROUP (KEY_GROUP_NAME)");
+      throw new IllegalStateException("Set DAMO_GROUP (KEY1)");
     }
 
     int port = port();
